@@ -1,6 +1,6 @@
 # Node.js E-Commerce App REST API with MongoDB
 
-Ecommerce backend built on nodejs and mongodb w/ Typescript that fully adheres to the principles and design patterns such as Dependency Inversion, Inversion of Control, Dependency Injection,...
+Ecommerce backend built on nodejs and mongodb w/ Javascript that fully adheres to the principles and design patterns such as Dependency Inversion, Inversion of Control, Dependency Injection,...
 
 ## Features
 
@@ -28,7 +28,7 @@ npm run start
 
 ## Built With
 
-- [TypeScript](https://www.typescriptlang.org/)
+
 - [NodeJS](https://nodejs.org/en/)
 - [ExpressJS](https://expressjs.com/)
 - [MongoDB](https://www.mongodb.com/)
