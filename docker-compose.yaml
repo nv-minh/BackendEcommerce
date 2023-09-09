@@ -2,8 +2,9 @@ version: "3.4"
 
 services:
     app:
-        image: ecommerce-service:1.0
-        container_name: ecommerce-service
+        build:
+            dockerfile: Dockerfile
+#        environment:
         volumes:
             - .docker/data/app:/app/logs
             - ./:/app # mount từ môi trường gốc vào trong để nếu  bạn thay đổi code thì bên trong sẽ tự động cập nhật
@@ -16,7 +17,7 @@ services:
         image: mongo:latest
         container_name: ec-mongodb
         ports:
-            - 27017:27017
+            - 27018:27017
         environment:
             #- MONGO_INITDB_DATABASE=test
             - MONGO_INITDB_ROOT_USERNAME=admin
