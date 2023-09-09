@@ -1,4 +1,7 @@
-/node_modules
-/package-lock.json
-/.env
-/dist
+/node_modules/
+/logs/*
+/.docker/
+/.docker/data/db/*
+/.docker/data/redis/*
+.idea
+.docker/data/*

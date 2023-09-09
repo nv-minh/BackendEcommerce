@@ -1,6 +1,3 @@
-
-
-
 const morgan = require("morgan");
 const compression = require("compression");
 const { default: helmet } = require("helmet");

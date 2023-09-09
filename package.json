@@ -7,8 +7,10 @@
         "doc": "docs"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node ./src/app.js"
+        "test": "mocha --recursive --exit",
+        "start": "node src/app.js",
+        "start:dev": "nodemon --legacy-watch src/app.js",
+        "start:local": "SET NODE_ENV=local nodemon --legacy-watch src/app.js"
     },
     "keywords": [],
     "author": "",
@@ -25,6 +27,7 @@
     "devDependencies": {
         "compression": "^1.7.4",
         "helmet": "^6.0.1",
-        "morgan": "^1.10.0"
+        "morgan": "^1.10.0",
+        "nodemon": "^3.0.1"
     }
 }
